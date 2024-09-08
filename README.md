@@ -30,13 +30,16 @@ To configure the blips, edit the config.lua file located in the resource's root 
 Example config.lua:
 
 ```
+-- config.lua
+
 Config = {}
 
+-- Define your blips with vector3 for coordinates
 Config.Blips = {
-    {title="Shop", colour=2, id=52, x = 25.7, y = -1347.3, z = 29.49},
-    {title="Hospital", colour=1, id=61, x = 339.85, y = -1394.56, z = 32.51},
-    {title="Police Station", colour=29, id=60, x = 425.1, y = -979.5, z = 30.7},
-    {title="Mechanic", colour=5, id=402, x = -211.55, y = -1324.55, z = 30.89}
+    {title="Shop", colour=2, id=52, coords = vector3(25.7, -1347.3, 29.49)},
+    {title="Hospital", colour=1, id=61, coords = vector3(339.85, -1394.56, 32.51)},
+    {title="Police Station", colour=29, id=60, coords = vector3(425.1, -979.5, 30.7)},
+    {title="Mechanic", colour=5, id=402, coords = vector3(-211.55, -1324.55, 30.89)}
 }
 ```
 How to Add Blips
